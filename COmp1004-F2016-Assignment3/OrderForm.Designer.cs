@@ -35,6 +35,8 @@
             this.GenreLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.YourOrderGroupBox = new System.Windows.Forms.GroupBox();
+            this.DvdLabel = new System.Windows.Forms.Label();
+            this.DvdCostTextBox = new System.Windows.Forms.TextBox();
             this.SubtotalTextBox = new System.Windows.Forms.TextBox();
             this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
             this.GrandTotalTextBox = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
-            this.DvdCostTextBox = new System.Windows.Forms.TextBox();
-            this.DvdLabel = new System.Windows.Forms.Label();
             this.MovieSelectedGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).BeginInit();
             this.YourOrderGroupBox.SuspendLayout();
@@ -72,7 +72,7 @@
             this.MovieSelectedGroupBox.Controls.Add(this.TitleLabel);
             this.MovieSelectedGroupBox.Location = new System.Drawing.Point(12, 27);
             this.MovieSelectedGroupBox.Name = "MovieSelectedGroupBox";
-            this.MovieSelectedGroupBox.Size = new System.Drawing.Size(329, 396);
+            this.MovieSelectedGroupBox.Size = new System.Drawing.Size(240, 373);
             this.MovieSelectedGroupBox.TabIndex = 0;
             this.MovieSelectedGroupBox.TabStop = false;
             this.MovieSelectedGroupBox.Text = "Movie Selected";
@@ -80,9 +80,9 @@
             // OrderPictureBox
             // 
             this.OrderPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.OrderPictureBox.Location = new System.Drawing.Point(62, 136);
+            this.OrderPictureBox.Location = new System.Drawing.Point(10, 133);
             this.OrderPictureBox.Name = "OrderPictureBox";
-            this.OrderPictureBox.Size = new System.Drawing.Size(208, 254);
+            this.OrderPictureBox.Size = new System.Drawing.Size(208, 231);
             this.OrderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OrderPictureBox.TabIndex = 4;
             this.OrderPictureBox.TabStop = false;
@@ -90,7 +90,7 @@
             // GenreTextBox
             // 
             this.GenreTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.GenreTextBox.Location = new System.Drawing.Point(62, 104);
+            this.GenreTextBox.Location = new System.Drawing.Point(10, 101);
             this.GenreTextBox.Name = "GenreTextBox";
             this.GenreTextBox.ReadOnly = true;
             this.GenreTextBox.Size = new System.Drawing.Size(208, 26);
@@ -100,7 +100,7 @@
             // TitleTextBox
             // 
             this.TitleTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TitleTextBox.Location = new System.Drawing.Point(62, 44);
+            this.TitleTextBox.Location = new System.Drawing.Point(10, 44);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(208, 26);
@@ -110,7 +110,7 @@
             // GenreLabel
             // 
             this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(58, 82);
+            this.GenreLabel.Location = new System.Drawing.Point(6, 79);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(46, 19);
             this.GenreLabel.TabIndex = 1;
@@ -119,7 +119,7 @@
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Location = new System.Drawing.Point(58, 22);
+            this.TitleLabel.Location = new System.Drawing.Point(6, 22);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(34, 19);
             this.TitleLabel.TabIndex = 0;
@@ -139,12 +139,32 @@
             this.YourOrderGroupBox.Controls.Add(this.SalesTaxLabel);
             this.YourOrderGroupBox.Controls.Add(this.SubTotalLabel);
             this.YourOrderGroupBox.Controls.Add(this.CostLabel);
-            this.YourOrderGroupBox.Location = new System.Drawing.Point(365, 27);
+            this.YourOrderGroupBox.Location = new System.Drawing.Point(258, 37);
             this.YourOrderGroupBox.Name = "YourOrderGroupBox";
-            this.YourOrderGroupBox.Size = new System.Drawing.Size(329, 321);
+            this.YourOrderGroupBox.Size = new System.Drawing.Size(295, 301);
             this.YourOrderGroupBox.TabIndex = 1;
             this.YourOrderGroupBox.TabStop = false;
             this.YourOrderGroupBox.Text = "Your Order";
+            // 
+            // DvdLabel
+            // 
+            this.DvdLabel.AutoSize = true;
+            this.DvdLabel.Location = new System.Drawing.Point(89, 82);
+            this.DvdLabel.Name = "DvdLabel";
+            this.DvdLabel.Size = new System.Drawing.Size(78, 19);
+            this.DvdLabel.TabIndex = 11;
+            this.DvdLabel.Text = "DVD Cost:";
+            this.DvdLabel.Visible = false;
+            // 
+            // DvdCostTextBox
+            // 
+            this.DvdCostTextBox.Location = new System.Drawing.Point(181, 79);
+            this.DvdCostTextBox.Name = "DvdCostTextBox";
+            this.DvdCostTextBox.ReadOnly = true;
+            this.DvdCostTextBox.Size = new System.Drawing.Size(100, 26);
+            this.DvdCostTextBox.TabIndex = 10;
+            this.DvdCostTextBox.Text = "$10.00";
+            this.DvdCostTextBox.Visible = false;
             // 
             // SubtotalTextBox
             // 
@@ -241,7 +261,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(706, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(562, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -295,7 +315,7 @@
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.Location = new System.Drawing.Point(365, 390);
+            this.BackButton.Location = new System.Drawing.Point(258, 367);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(82, 33);
             this.BackButton.TabIndex = 3;
@@ -307,7 +327,7 @@
             // 
             this.StreamButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.StreamButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StreamButton.Location = new System.Drawing.Point(612, 390);
+            this.StreamButton.Location = new System.Drawing.Point(471, 367);
             this.StreamButton.Name = "StreamButton";
             this.StreamButton.Size = new System.Drawing.Size(82, 33);
             this.StreamButton.TabIndex = 4;
@@ -319,7 +339,7 @@
             // 
             this.CancelButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CancelButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(524, 390);
+            this.CancelButton.Location = new System.Drawing.Point(368, 367);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(82, 33);
             this.CancelButton.TabIndex = 5;
@@ -327,34 +347,13 @@
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // DvdCostTextBox
-            // 
-            this.DvdCostTextBox.Location = new System.Drawing.Point(181, 79);
-            this.DvdCostTextBox.Name = "DvdCostTextBox";
-            this.DvdCostTextBox.ReadOnly = true;
-            this.DvdCostTextBox.Size = new System.Drawing.Size(100, 26);
-            this.DvdCostTextBox.TabIndex = 10;
-            this.DvdCostTextBox.Text = "$10.00";
-            this.DvdCostTextBox.Visible = false;
-            // 
-            // DvdLabel
-            // 
-            this.DvdLabel.AutoSize = true;
-            this.DvdLabel.Location = new System.Drawing.Point(89, 82);
-            this.DvdLabel.Name = "DvdLabel";
-            this.DvdLabel.Size = new System.Drawing.Size(78, 19);
-            this.DvdLabel.TabIndex = 11;
-            this.DvdLabel.Text = "DVD Cost:";
-            this.DvdLabel.Visible = false;
-            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.BackgroundImage = global::COmp1004_F2016_Assignment3.Properties.Resources.MovieBackGround3;
+            this.BackColor = System.Drawing.SystemColors.GrayText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(706, 435);
+            this.ClientSize = new System.Drawing.Size(562, 408);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.StreamButton);
             this.Controls.Add(this.BackButton);

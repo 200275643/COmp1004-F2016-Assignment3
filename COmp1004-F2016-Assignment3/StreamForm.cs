@@ -35,7 +35,7 @@ namespace COmp1004_F2016_Assignment3
             ProgressTimer.Start();
 
             StreamLabel.Text = "Thank you for choosing Movie Bonanza!" + "\r\n" + "Your movie is: " + Program.info.Title + "\r\n"
-                + "Your cost is: " + Program.info.GrandTotal + "\r\n" + "Your movie will begin shortly!";
+                + "Your cost is: " + Program.info.GrandTotal + "\r\n" ;
 
 
         }

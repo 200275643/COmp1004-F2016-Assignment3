@@ -40,7 +40,7 @@
             // 
             this.StreamOkButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.StreamOkButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StreamOkButton.Location = new System.Drawing.Point(164, 187);
+            this.StreamOkButton.Location = new System.Drawing.Point(270, 184);
             this.StreamOkButton.Name = "StreamOkButton";
             this.StreamOkButton.Size = new System.Drawing.Size(82, 33);
             this.StreamOkButton.TabIndex = 1;
@@ -52,7 +52,7 @@
             // StreamProgressBar
             // 
             this.StreamProgressBar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.StreamProgressBar.Location = new System.Drawing.Point(111, 158);
+            this.StreamProgressBar.Location = new System.Drawing.Point(85, 112);
             this.StreamProgressBar.Name = "StreamProgressBar";
             this.StreamProgressBar.Size = new System.Drawing.Size(185, 23);
             this.StreamProgressBar.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             this.MovieReadyLabel.AutoSize = true;
             this.MovieReadyLabel.BackColor = System.Drawing.Color.Transparent;
-            this.MovieReadyLabel.Location = new System.Drawing.Point(134, 136);
+            this.MovieReadyLabel.Location = new System.Drawing.Point(92, 24);
             this.MovieReadyLabel.Name = "MovieReadyLabel";
             this.MovieReadyLabel.Size = new System.Drawing.Size(133, 19);
             this.MovieReadyLabel.TabIndex = 4;
@@ -89,9 +89,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BackgroundImage = global::COmp1004_F2016_Assignment3.Properties.Resources.MovieBackGround3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(395, 266);
+            this.ClientSize = new System.Drawing.Size(364, 229);
             this.Controls.Add(this.MovieReadyLabel);
             this.Controls.Add(this.StreamLabel);
             this.Controls.Add(this.StreamProgressBar);

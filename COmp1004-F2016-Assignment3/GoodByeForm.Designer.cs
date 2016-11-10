@@ -38,11 +38,11 @@
             this.GoodByeLabel.AutoSize = true;
             this.GoodByeLabel.BackColor = System.Drawing.Color.Transparent;
             this.GoodByeLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoodByeLabel.Location = new System.Drawing.Point(115, 116);
+            this.GoodByeLabel.Location = new System.Drawing.Point(62, 56);
             this.GoodByeLabel.Name = "GoodByeLabel";
-            this.GoodByeLabel.Size = new System.Drawing.Size(176, 23);
+            this.GoodByeLabel.Size = new System.Drawing.Size(164, 23);
             this.GoodByeLabel.TabIndex = 0;
-            this.GoodByeLabel.Text = "Enjoy Your Movie!!";
+            this.GoodByeLabel.Text = "Happy Streaming!!";
             // 
             // GoodByeTimer
             // 
@@ -53,9 +53,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::COmp1004_F2016_Assignment3.Properties.Resources.MovieBackGround3;
+            this.BackColor = System.Drawing.SystemColors.GrayText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(395, 266);
+            this.ClientSize = new System.Drawing.Size(300, 133);
             this.Controls.Add(this.GoodByeLabel);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

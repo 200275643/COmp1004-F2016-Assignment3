@@ -131,9 +131,9 @@ namespace COmp1004_F2016_Assignment3
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Developer: Karl Kovacs" + "\r\n" +
+            MessageBox.Show("Developer: Chandra Gundam" + "\r\n" +
                 "Version: 3.0" + "\r\n" + "Website: www.moviebonanza.com" + "\r\n" +
-                "Phone: 1-800-739-2934 ", "About");
+                "About");
         }
     }
 }
