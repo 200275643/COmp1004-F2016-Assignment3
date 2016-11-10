@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+// Chandra Gundam (200275643)
+//November 10th, 2016
 
 namespace COmp1004_F2016_Assignment3
 {
